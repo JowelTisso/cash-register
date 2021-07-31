@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Cash Register</title>
   </head>
   <body>
-    Cash Register
+    <div class="container">
+      <h2 class="heading">Cash Register Manager</h2>
+      <h4 class="info">Enter the bill amount to calculate the change to be returned!</h4>
+      <div class="container-input">
+        <h3 class="input-title">Bill Amount : </h3>
+        <input class="input-billamount" placeholder="Bill Amount" type="number"></input>
+        <h3 class="input-title cash-given-title">Cash Given : </h3>
+        <input class="input-cashgiven" placeholder="Cash Given" type="number"></input>
+        <button class="btn">Next</button>
+      </div>
+      <div class="container-msg"></div>
+      <h3 class="input-title change-title">Change to Return : </h3>
+      <table class="container-output"></table>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
